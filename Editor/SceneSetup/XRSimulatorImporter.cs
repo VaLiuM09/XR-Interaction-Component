@@ -29,7 +29,7 @@ namespace Innoactive.CreatorEditor.PackageManager.XRInteraction
         public void ImportSimulatorRig()
         {
             GameObject simulator = LoadPrefab(SamplePrefabName, "Samples", out string simulatorRigPath);
-            GameObject actionRig = LoadPrefab(ActionRigName, "Innoactive", out string actionRigPath);
+            GameObject actionRig = LoadPrefab(ActionRigName, "VPG", out string actionRigPath);
 
             if (simulator == null || actionRig == null)
             {

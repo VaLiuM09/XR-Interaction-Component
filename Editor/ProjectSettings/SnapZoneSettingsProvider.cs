@@ -1,13 +1,13 @@
-﻿using VPG.Creator.XRInteraction;
-using VPG.CreatorEditor.UI;
-using VPG.CreatorEditor.XRInteraction;
+﻿using VPG.XRInteraction;
+using VPG.Editor.UI;
+using VPG.Editor.XRInteraction;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 internal class SnapZoneSettingsProvider : SettingsProvider
 {
-    const string Path = "Project/Creator/Snap Zones";
+    const string Path = "Project/VR Process Gizmo/Snap Zones";
 
     private Editor editor;
     
@@ -16,7 +16,7 @@ internal class SnapZoneSettingsProvider : SettingsProvider
     public override void OnGUI(string searchContext)
     {
         EditorGUILayout.Space();
-        GUIStyle labelStyle = CreatorEditorStyles.ApplyPadding(CreatorEditorStyles.Paragraph, 0); 
+        GUIStyle labelStyle = VPGEditorStyles.ApplyPadding(VPGEditorStyles.Paragraph, 0); 
         GUILayout.Label("These settings help you to configure Snap Zones within your scenes. You can define colors and other values that will be set to Snap Zones created by clicking the 'Create Snap Zone' button of a Snappable Property.", labelStyle);
         EditorGUILayout.Space();
         
